@@ -1,20 +1,13 @@
 {
   "instructors": [
     {
-      "avatar_url": "https://globoesporte.globo.com/al/futebol/times/asa/",
-      "name": "Guilherme Experience Download",
-      "birth": "1994-01-21",
-      "gender": "M",
-      "services": "maromba",
-      "created_at": 1603419762028
-    },
-    {
-      "avatar_url": "https://globoesporte.globo.com/al/futebol/times/asa/",
+      "id": 1,
       "name": "Guilherme Teste",
+      "avatar_url": "https://globoesporte.globo.com/al/futebol/times/asa/",
       "birth": 759110400000,
       "gender": "M",
-      "services": "emagrecimento",
-      "created_at": 1603419961962
+      "services": "musculacao, crossfit",
+      "created_at": 1603754893940
     }
   ]
 }
