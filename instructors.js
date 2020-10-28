@@ -13,15 +13,19 @@ exports.show = function(req, res) {
 
      if (!foundInstructor) return res.send("Instructor não identificado")
 
+
+     function age(timestamp) {
+         const today = new Date()
+         const birthDate = new Date(timestamp)
+     }
+
     const instructor = {
         ...foundInstructor,
-        age:"",
-        gender:"",
-        services:"",
+        age: age(foundInstructor.birth),
+        services: foundInstructor.services.split(","),
         created_at:"",
     }
-
-
+    
 
      return res.render("instructors/show", { instructor })
 }

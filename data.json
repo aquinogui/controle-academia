@@ -2,21 +2,21 @@
   "instructors": [
     {
       "id": 1,
-      "name": "Guilherme Teste",
+      "name": "Guilherme Novo",
       "avatar_url": "https://globoesporte.globo.com/al/futebol/times/asa/",
       "birth": 759110400000,
       "gender": "M",
-      "services": "musculacao, crossfit",
-      "created_at": 1603754893940
+      "services": "musculacao, crossfit, boxe",
+      "created_at": 1603927239632
     },
     {
       "id": 2,
-      "name": "Guilherme Teste",
+      "name": "Ana Paula",
       "avatar_url": "https://globoesporte.globo.com/al/futebol/times/asa/",
-      "birth": 759110400000,
-      "gender": "M",
-      "services": "musculacao, crossfit",
-      "created_at": 1603843321050
+      "birth": 766886400000,
+      "gender": "F",
+      "services": "Natação, ballet, dança ",
+      "created_at": 1603927270924
     }
   ]
 }
