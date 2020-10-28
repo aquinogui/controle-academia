@@ -8,6 +8,15 @@
       "gender": "M",
       "services": "musculacao, crossfit",
       "created_at": 1603754893940
+    },
+    {
+      "id": 2,
+      "name": "Guilherme Teste",
+      "avatar_url": "https://globoesporte.globo.com/al/futebol/times/asa/",
+      "birth": 759110400000,
+      "gender": "M",
+      "services": "musculacao, crossfit",
+      "created_at": 1603843321050
     }
   ]
 }

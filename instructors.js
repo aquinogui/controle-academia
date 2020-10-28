@@ -2,6 +2,30 @@
 const fs = require ('fs')
 const data = require('./data.json')
 
+//show
+
+exports.show = function(req, res) {
+
+     const {id} = req.params 
+     const foundInstructor = data.instructors.find(function (instructor) { 
+        return id == instructor.id
+     })
+
+     if (!foundInstructor) return res.send("Instructor não identificado")
+
+    const instructor = {
+        ...foundInstructor,
+        age:"",
+        gender:"",
+        services:"",
+        created_at:"",
+    }
+
+
+
+     return res.render("instructors/show", { instructor })
+}
+ 
 //create
 
 exports.post = function(req, res) {
@@ -13,7 +37,6 @@ for (key of keys) {
         return res.send("Preecha todos os campos")
     }
 }
-
 
 let { avatar_url, birth, name, services, gender } = req.body
 
