@@ -2,6 +2,13 @@ const fs = require('fs')
 const data = require('./data.json')
 const {age, date} = require('./utils')
 
+//index/home
+
+exports.index = function (req, res) {
+    return res.render ("instructors/index", { instructors: data.instructors } )
+}
+
+
 //show
 
 exports.show = function (req, res) {
