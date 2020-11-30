@@ -8,7 +8,6 @@ exports.index = function (req, res) {
     return res.render ("instructors/index", { instructors: data.instructors } )
 }
 
-
 //show
 
 exports.show = function (req, res) {
