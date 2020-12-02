@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-color:#7159c1;
+    --primary-color: #7159c1;
     --secondary-color: #f7df1e;
 }
 
@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--primary-color)
 }
 
@@ -20,14 +20,14 @@ header {
     background-color: white;
     width: 100%;
     padding: 32px;
-    text-align:center;
+    text-align: center;
 }
 
 .links {
     font-size: 22px;
 }
 
-.links a + a {
+.links a+a {
     margin-left: 32px;
 }
 
@@ -47,7 +47,7 @@ header {
 }
 
 .links a::after {
-    content:"";
+    content: "";
     width: 0;
     height: 2px;
     background-color: var(--primary-color);
@@ -58,7 +58,7 @@ header {
 
 .links a:hover::after {
     transition: width 200ms ease-in-out;
-    width:100%;
+    width: 100%;
 }
 
 
@@ -72,7 +72,7 @@ header {
     margin: 45px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.2);
 
     /*ANIMATION*/
     animation: up 700ms ease-out;
@@ -96,11 +96,11 @@ header {
 }
 
 .details .item {
-   border-bottom: 1px solid rgba(0,0,0,0.1);
-   padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
 }
 
-.details .item:last-child { 
+.details .item:last-child {
     border: none;
 }
 
@@ -115,22 +115,22 @@ header {
 
 .details .item div:nth-child(2) {
     font-size: 18px;
-    color:#777;
+    color: #777;
     font-weight: bold;
 }
 
 .details h3 {
-     text-transform: uppercase;
-     font-weight: bold;
-     color: var(--primary-color);
-     font-size: 22px;
-     
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 22px;
+
 }
 
 .details .item span {
     padding: 8px 16px;
     background-color: var(--secondary-color);
-    border-radius: 16px; 
+    border-radius: 16px;
     color: #777;
     margin-right: 4px;
     margin-top: 8px;
@@ -144,10 +144,10 @@ header {
 input {
     width: 100%;
     outline: none;
-    color:#555;
+    color: #555;
     font-weight: bold;
     font-size: 16px;
-    padding:8px;
+    padding: 8px;
 }
 
 input[type="radio"] {
@@ -156,23 +156,24 @@ input[type="radio"] {
 }
 
 input::placeholder {
-    font-size:16px;
+    font-size: 16px;
     font-weight: normal;
 }
 
-button[type="submit"], a.button {
-    width:100%;
-    padding:8px 32px;
-    background-color:var(--primary-color);
+button[type="submit"],
+a.button {
+    width: 100%;
+    padding: 8px 32px;
+    background-color: var(--primary-color);
     border-radius: 4px;
     margin-top: 32px;
-    border:none;
-    color:white;
+    border: none;
+    color: white;
     outline: none;
 }
 
 a.button {
-    display:block;
+    display: block;
     text-align: center;
     box-sizing: b;
     text-decoration: none;
@@ -196,19 +197,33 @@ a.button {
     border-spacing: 0;
 }
 
-.table-container thead tr th {
-    text-align: left;
-}
 
-td, th {
+td,
+th {
     padding: 16px;
     border-bottom: 1px solid #d9d9d9;
 }
 
-tbody tr:last-child rd {
-    border-bottom: none;
+
+/*PAGE INSTRUCTOR */
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
 }
 
-.table-container {}
+tbody tr td:first-child span {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 3px 1px 6px -4px black;
+}
 
+tbody tr td {
+    text-align: center;
+}
 

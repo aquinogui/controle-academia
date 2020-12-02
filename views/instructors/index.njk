@@ -9,19 +9,20 @@
                 <th>Instrutor</th>
                 <th>Atendimento</th>
                 <th>Ação</th>
+                <th></th>
             </tr>
-        <thead>
-        <tbody>
-        {% for instructor in instructors %}
-            <tr>
-                <td> {{ instructor.name}} </td>
-                <td> {{ instructor.services}} </td>
-                <td> <a href="/instructors/{{instructor.id}}">ver</a> </td>
-                
-            </tr>
-        </tbody>
-        {% endfor %}
+        </thead>
+            <tbody>
+                {% for instructor in instructors %}
+                <tr>
+                    <td><span style="background-image: url({{ instructor.avatar_url}})"></span></td>
+                    <td> {{ instructor.name}} </td>
+                    <td> {{ instructor.services}} </td>
+                    <td> <a href="/instructors/{{instructor.id}}">ver</a> </td>
+                </tr>
+            </tbody>
+            {% endfor %}
     </table>
 </div>
-    
+
 {% endblock content %}
