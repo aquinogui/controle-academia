@@ -1,6 +1,6 @@
 const fs = require('fs')
-const data = require('./data.json')
-const {age, date} = require('./utils')
+const data = require('../data.json')
+const {age, date} = require('../utils')
 
 //index/home
 
@@ -34,6 +34,11 @@ exports.show = function (req, res) {
 }
 
 //create
+exports.create = function (req, res) {
+    return ress.send('instructors/create')
+}
+
+//post
 
 exports.post = function (req, res) {
 
