@@ -34,7 +34,7 @@ exports.show = function (req, res) {
 
 //create
 exports.create = function (req, res) {
-    return ress.send('members/create')
+    return res.render('members/create')
 }
 
 
